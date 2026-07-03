@@ -1,11 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Nghe nhạc và xem video</title>
 </head>
-<body>
-    <p>Đang cập nhật...</p>
+<body align="center">
+
+    <h2>Audio Player</h2>
+    <audio controls>
+        <source src="./uploads/sounds.m4a" type="audio/mpeg">
+        Trình duyệt của bạn không hỗ trợ thẻ audio.
+    </audio>
+
+
+    <h2>Video Player</h2>
+    <video width="640" height="360" controls>
+        <source src="./uploads/video.mp4" type="video/mp4">
+        Trình duyệt của bạn không hỗ trợ thẻ video.
+    </video>
+
+    <h2>YouTube Player</h2>
+    <iframe
+        width="640"
+        height="360"
+        src="https://www.youtube.com/embed/dg4Byky2oLk"
+        title="YouTube video"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen>
+    </iframe>
+
 </body>
 </html>
