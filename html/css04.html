@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Animation</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Tahoma;
+        }
+
+        .container {
+            width: 900px;
+            margin: 30px auto;
+            border: 1px solid royalblue;
+            padding: 8px;
+        }
+
+        /*================ Banner ================*/
+
+        .banner {
+            height: 80px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            animation: bannerColor 4s infinite alternate;
+        }
+
+        .banner h2 {
+            animation: bannerText 2s infinite alternate;
+        }
+
+        /*================ Content ================*/
+
+        .content {
+            display: flex;
+            justify-content: space-around;
+            margin: 35px 0 50px;
+        }
+
+        /*================ Box =================*/
+
+        .box {
+            width: 140px;
+            height: 170px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 42px;
+            color: yellow;
+        }
+
+        /* Box 1 */
+
+        .box1 {
+            border: 3px solid red;
+            background-size: cover;
+            background-position: center;
+            animation: changeImage 6s infinite;
+        }
+
+        /* Box 2 */
+
+        .box2 {
+            background: #16dfe6;
+            border: 3px dashed blue;
+            border-radius: 0 25px 0 25px;
+        }
+
+        /* Box 3 */
+
+        .box3 {
+            background: #16dfe6;
+            border: 3px dotted magenta;
+            border-radius: 25px;
+        }
+
+        /* Box 4 */
+
+        .box4 {
+            background: #0e8b8b;
+            color: yellow;
+            writing-mode: vertical-rl;
+            text-orientation: mixed;
+            animation: rotateBox 4s linear infinite;
+        }
+
+        /*================ Animation =================*/
+
+        @keyframes bannerColor {
+
+            0% {
+                background: #ff003c;
+            }
+
+            50% {
+                background: #ff00ff;
+            }
+
+            100% {
+                background: orange;
+            }
+
+        }
+
+        @keyframes bannerText {
+
+            from {
+                font-size: 18px;
+            }
+
+            to {
+                font-size: 36px;
+            }
+
+        }
+
+        @keyframes rotateBox {
+
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(360deg);
+            }
+
+        }
+
+        @keyframes changeImage {
+
+            0% {
+                background-image: url("https://picsum.photos/id/1015/300/300");
+            }
+
+            33% {
+                background-image: url("https://picsum.photos/id/1011/300/300");
+            }
+
+            66% {
+                background-image: url("https://picsum.photos/id/1043/300/300");
+            }
+
+            100% {
+                background-image: url("https://picsum.photos/id/1056/300/300");
+            }
+
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="banner">
+            <h2>BANNER</h2>
+        </div>
+
+        <div class="content">
+
+            <div class="box box1">
+                1
+            </div>
+
+            <div class="box box2">
+                2
+            </div>
+
+            <div class="box box3">
+                3
+            </div>
+
+            <div class="box box4">
+                Rotate
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

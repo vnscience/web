@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Định dạng văn bản</title>
+    <style>
+        body {
+            font-family: Roboto, Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+        p.bold-first-line::first-line {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <h2 style="text-shadow: 3px 3px 5px gray;">
+        Dòng này được định dạng có bóng (shadow)
+    </h2>
+
+    <p>
+        Văn bản bình thường
+    </p>
+
+    <p style="text-transform: capitalize; text-align: center">
+        hoa các ký tự đầu
+    </p>
+
+    <p style="text-transform: uppercase; text-align: right">
+        Hoa tất cả các ký tự
+    </p>
+
+    <p style="text-transform: lowercase;">
+        ĐOẠN NÀY SẼ ĐƯỢC CHUYỂN VỀ CHỮ THƯỜNG
+    </p>
+
+    <p class="bold-first-line">
+        <span style="font-size: 32px;">Đ</span><strong>oạn</strong> văn bản này có ký tự đầu được định dạng font-size lớn, dòng đầu tiên được in đậm.
+    </p>
+
+</body>
+</html>
