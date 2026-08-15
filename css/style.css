@@ -84,7 +84,7 @@ select {
     /* bắt đầu từ mép phải */
     font-size: 24px;
     font-weight: bold;
-    animation: chay-chu 12s linear infinite;
+    animation: chay-chu 100s linear infinite;
 }
 
 @keyframes chay-chu {

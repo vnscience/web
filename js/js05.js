@@ -47,7 +47,7 @@ document.getElementById("btnThayThe").onclick = function () {
         alert("Chuỗi S2 không được rỗng!");
         return;
     }
-    s1.value = s1.value.replace(mauTimS2(s2.value), s3.value);
+    s1.value = s1.value.replace(s2.value, s3.value);
 };
 
 // ---------- 5. Chèn S2 vào S1 tại vị trí chèn ----------
@@ -71,5 +71,5 @@ document.getElementById("btnXoa").onclick = function () {
         alert("Chuỗi S2 không được rỗng!");
         return;
     }
-    s1.value = s1.value.replace(mauTimS2(s2.value), "");
+    s1.value = s1.value.replace(s2.value, "");
 };
