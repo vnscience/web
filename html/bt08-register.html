@@ -8,7 +8,8 @@
 
 <body>
 
-    <div align="center"> <!-- PHẦN ĐẦU TRANG WEB -->
+    <!-- PHẦN ĐẦU TRANG WEB -->
+    <div align="center">
         <h2>BÀI KIỂM TRA CHƯƠNG 2</h2>
 
         <b>Môn học:</b> <i>Mạng máy tính</i><br>
@@ -18,51 +19,91 @@
         <hr color="blue">
 
         <a href="bt08-index.html">Trang chủ</a>
+        &nbsp;&nbsp;&nbsp;
         <a href="bt08-content.html">Nội dung môn học</a>
+        &nbsp;&nbsp;&nbsp;
         <a href="bt08-register.html">Đăng ký</a>
     </div>
 
+    <!-- PHẦN ĐĂNG KÝ -->
     <div align="center">
         <h2>ĐĂNG KÝ THAM GIA DIỄN ĐÀN</h2>
 
         <form action="#" method="post">
             <table border="1" bgcolor="yellow" cellpadding="5">
+
                 <tr>
                     <td>Tên đăng nhập:</td>
                     <td>
-                        <input type="text" name="username" placeholder="Nhập tên đăng nhập" required>
+                        <input
+                            type="text"
+                            name="username"
+                            placeholder="Nhập tên đăng nhập"
+                            required
+                        >
                     </td>
                 </tr>
+
                 <tr>
                     <td>Mật khẩu:</td>
                     <td>
-                        <input type="password" name="password" required>
+                        <input
+                            type="password"
+                            name="password"
+                            required
+                        >
                     </td>
                 </tr>
+
                 <tr>
                     <td>Giới tính:</td>
                     <td>
-                        <input type="radio" name="gender" value="Nam" checked> Nam
-                        <input type="radio" name="gender" value="Nữ"> Nữ
+                        <input
+                            type="radio"
+                            name="gender"
+                            value="Nam"
+                            checked
+                        >
+                        Nam
+
+                        <input
+                            type="radio"
+                            name="gender"
+                            value="Nữ"
+                        >
+                        Nữ
                     </td>
                 </tr>
+
                 <tr>
                     <td>Ngày sinh:</td>
                     <td>
-                        <input type="date" name="birthday" required>
+                        <input
+                            type="date"
+                            name="birthday"
+                            required
+                        >
                     </td>
                 </tr>
+
                 <tr>
                     <td>Email:</td>
                     <td>
-                        <input type="email" name="email" required>
+                        <input
+                            type="email"
+                            name="email"
+                            required
+                        >
                     </td>
                 </tr>
+
                 <tr>
-                    <td>Ngôn ngữ lập trình yêu thích nhất</td>
+                    <td>Ngôn ngữ lập trình yêu thích nhất:</td>
                     <td>
-                        <select name="language" style="width: 200px;" required>
-                            <option value="" selected disabled>Chọn ngôn ngữ ...</option>
+                        <select name="language" required>
+                            <option value="" selected disabled>
+                                Chọn ngôn ngữ ...
+                            </option>
                             <option value="cpp">C++</option>
                             <option value="csharp">C#</option>
                             <option value="php">PHP</option>
@@ -71,29 +112,45 @@
                         </select>
                     </td>
                 </tr>
+
                 <tr>
+                    <td>Quy định khi tham gia diễn đàn:</td>
                     <td>
-                        Quy định khi tham gia diễn đàn
-                    </td>
-                    <td>
-                        <textarea rows="5"
-                            cols="35">Bài viết phải nghiêm túc, không chứa quảng cáo, không có nội dung phản cảm.</textarea>
+                        <textarea
+                            name="rules"
+                            rows="5"
+                            cols="35"
+                            readonly
+                        >Bài viết phải nghiêm túc, không chứa quảng cáo, không có nội dung phản cảm.</textarea>
                     </td>
                 </tr>
+
                 <tr>
-                    <td></td>
-                    <td align="center">
+                    <td colspan="2" align="center">
                         <button type="submit">
-                            <img src="../upload/DangKy.png" alt="Đăng ký" width="100">
+                            <img
+                                src="../upload/DangKy.png"
+                                alt="Đăng ký"
+                                width="100"
+                            >
                         </button>
+
+                        &nbsp;&nbsp;&nbsp;
+
                         <button type="reset">
-                            <img src="../upload/Huy.png" alt="Hủy" width="100">
+                            <img
+                                src="../upload/Huy.png"
+                                alt="Hủy"
+                                width="100"
+                            >
                         </button>
                     </td>
                 </tr>
+
             </table>
         </form>
     </div>
+
 </body>
 
 </html>

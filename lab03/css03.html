@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Admin Dashboard</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            background: #f4f4f4;
+        }
+
+        .container {
+            display: flex;
+            min-height: 100vh;
+        }
+
+        .sidebar {
+            width: 260px;
+            background: #2f4558;
+            color: white;
+            padding: 25px;
+        }
+
+        .sidebar h2 {
+            font-size: 26px;
+            margin-bottom: 40px;
+        }
+
+        .sidebar ul {
+            list-style: none;
+        }
+
+        .sidebar li {
+            margin: 22px 0;
+        }
+
+        .sidebar a {
+            color: white;
+            text-decoration: none;
+            font-size: 20px;
+        }
+
+        .sidebar a:hover {
+            color: #66c2ff;
+        }
+
+        .content {
+            flex: 1;
+            padding: 40px;
+        }
+
+        .content h1 {
+            font-size: 56px;
+            margin-bottom: 30px;
+        }
+
+        .cards {
+            display: flex;
+            gap: 25px;
+            margin-bottom: 40px;
+        }
+
+        .card {
+            flex: 1;
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, .12);
+        }
+
+        .card h3 {
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+
+        .card p {
+            font-size: 22px;
+        }
+
+        .content h2 {
+            font-size: 46px;
+            margin-bottom: 25px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+        }
+
+        th {
+            background: #edf4f7;
+            text-align: left;
+            padding: 16px;
+            font-size: 20px;
+        }
+
+        td {
+            padding: 16px;
+            border-bottom: 1px solid #ddd;
+            font-size: 18px;
+        }
+
+        tr:hover {
+            background: #f8f8f8;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="sidebar">
+            <h2>Admin</h2>
+
+            <ul>
+                <li><a href="#">Dashboard</a></li>
+                <li><a href="#">Người dùng</a></li>
+                <li><a href="#">Báo cáo</a></li>
+                <li><a href="#">Cài đặt</a></li>
+            </ul>
+        </div>
+
+        <div class="content">
+
+            <h1>Tổng quan hệ thống</h1>
+
+            <div class="cards">
+
+                <div class="card">
+                    <h3>Người dùng</h3>
+                    <p>1.230</p>
+                </div>
+
+                <div class="card">
+                    <h3>Đơn hàng</h3>
+                    <p>860</p>
+                </div>
+
+                <div class="card">
+                    <h3>Lượt truy cập</h3>
+                    <p>15.400</p>
+                </div>
+
+            </div>
+
+            <h2>Danh sách người dùng</h2>
+
+            <table>
+
+                <tr>
+                    <th>ID</th>
+                    <th>Tên</th>
+                    <th>Email</th>
+                    <th>Trạng thái</th>
+                </tr>
+
+                <tr>
+                    <td>1</td>
+                    <td>Nguyễn Văn A</td>
+                    <td>a@example.com</td>
+                    <td>Hoạt động</td>
+                </tr>
+
+                <tr>
+                    <td>2</td>
+                    <td>Trần Thị B</td>
+                    <td>b@example.com</td>
+                    <td>Tạm khóa</td>
+                </tr>
+
+                <tr>
+                    <td>3</td>
+                    <td>Lê Văn C</td>
+                    <td>c@example.com</td>
+                    <td>Hoạt động</td>
+                </tr>
+
+            </table>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

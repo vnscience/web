@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Định dạng văn bản</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .bold-first-line::first-line {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <h2 style="text-shadow: 5px 5px 2px grey;">
+        Dòng này được định dạng có bóng (shadow)
+    </h2>
+
+    <p>
+        Văn bản bình thường
+    </p>
+
+    <p style="text-align: center; text-transform: capitalize;">
+        hoa các ký tự đầu
+    </p>
+
+    <p style="text-align: right; text-transform: uppercase;">
+        Hoa tất cả các ký tự
+    </p>
+
+    <p style="text-transform: lowercase;">
+        ĐOẠN NÀY SẼ ĐƯỢC CHUYỂN VỀ CHỮ THƯỜNG
+    </p>
+
+    <p class="bold-first-line">
+        <span style="font-size: 32px;">Đ</span>oạn văn bản này có ký tự đầu được định dạng font-size lớn, dòng đầu tiên được in đậm.
+    </p>
+
+</body>
+</html>

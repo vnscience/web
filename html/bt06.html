@@ -1,29 +1,52 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chương trình nghe nhạc và xem phim</title>
 </head>
+
 <body align="center">
-    <div> <!-- Audio -->
+
+    <!-- AUDIO -->
+    <div>
         <h3>Audio Player</h3>
+
         <audio controls autoplay muted>
-            <source src="../upload/audio.m4a" type="audio/mpeg">
-          Your browser does not support the audio element.
-          </audio>
+            <source src="../upload/audio.m4a" type="audio/mp4">
+            Trình duyệt của bạn không hỗ trợ thẻ audio.
+        </audio>
     </div>
 
-    <div> <!-- Video -->
+    <!-- VIDEO -->
+    <div>
         <h3>Video Player</h3>
-        <video width="320" height="240" controls>
+
+        <video
+            width="320"
+            height="240"
+            controls
+        >
             <source src="../upload/video.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-          </video>
+            Trình duyệt của bạn không hỗ trợ thẻ video.
+        </video>
     </div>
-    <div> <!-- Youtube -->
+
+    <!-- YOUTUBE -->
+    <div>
         <h3>Youtube Player</h3>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/dg4Byky2oLk?si=nSNrt_1UKqK6IJ3R" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+        <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/dg4Byky2oLk"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+        ></iframe>
     </div>
+
 </body>
+
 </html>

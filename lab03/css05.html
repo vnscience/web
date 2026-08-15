@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<title>Netflix Clone</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#141414;
+    color:white;
+}
+
+/*================== MENU ==================*/
+
+.header{
+    background:#000;
+    height:70px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:0 40px;
+}
+
+.logo{
+    color:red;
+    font-size:34px;
+    font-weight:bold;
+}
+
+.menu a{
+    color:white;
+    text-decoration:none;
+    margin-left:25px;
+}
+
+.menu a:hover{
+    color:red;
+}
+
+/*================== BANNER ==================*/
+
+.banner{
+    height:260px;
+    background:url(images/banner.jpg) center/cover;
+    display:flex;
+    align-items:flex-end;
+    padding:40px;
+}
+
+.banner h1{
+    font-size:52px;
+}
+
+/*================== CONTENT ==================*/
+
+.container{
+    width:95%;
+    margin:30px auto;
+}
+
+.section{
+    margin-bottom:60px;
+}
+
+.section h2{
+    margin-bottom:20px;
+}
+
+/*================== MOVIES ==================*/
+
+.movies{
+    display:flex;
+    gap:18px;
+    flex-wrap:wrap;
+}
+
+.movie{
+    width:160px;
+    overflow:hidden;
+    transition:0.4s;
+}
+
+.movie img{
+    width:100%;
+    display:block;
+    border-radius:5px;
+}
+
+/* Hiệu ứng khi rê chuột */
+
+.movie:hover{
+
+    transform:scale(1.15);
+
+    box-shadow:0 0 25px white;
+
+    cursor:pointer;
+
+    z-index:100;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="header">
+
+    <div class="logo">NETFLIX</div>
+
+    <div class="menu">
+        <a href="#">Trang chủ</a>
+        <a href="#">Phim</a>
+        <a href="#">Thể loại</a>
+    </div>
+
+</div>
+
+<div class="banner">
+
+    <h1>Phim nổi bật hôm nay</h1>
+
+</div>
+
+<div class="container">
+
+    <div class="section">
+
+        <h2>Xu hướng</h2>
+
+        <div class="movies">
+
+            <div class="movie">
+                <img src="https://picsum.photos/id/1015/300/300">
+            </div>
+
+            <div class="movie">
+                <img src="https://picsum.photos/id/1011/300/300">
+            </div>
+
+            <div class="movie">
+                <img src="https://picsum.photos/id/1043/300/300">
+            </div>
+
+            <div class="movie">
+                <img src="https://picsum.photos/id/1056/300/300">
+            </div>
+
+            <div class="movie">
+                <img src="https://picsum.photos/id/1074/300/300">
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="section">
+
+        <h2>Mới phát hành</h2>
+
+        <div class="movies">
+
+            <div class="movie">
+                <img src="https://simg.zalopay.com.vn/zlp-website/assets/phim_chieu_rap_hom_nay_8_87fd4687c4.jpg">
+            </div>
+
+            <div class="movie">
+                <img src="https://picsum.photos/id/1011/300/300">
+            </div>
+
+            <div class="movie">
+                <img src="https://picsum.photos/id/1043/300/300">
+            </div>
+
+            <div class="movie">
+                <img src="https://picsum.photos/id/1056/300/300">
+            </div>
+
+            <div class="movie">
+                <img src="https://picsum.photos/id/1074/300/300">
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>

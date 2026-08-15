@@ -1,8 +1,6 @@
 // Nhập tháng và năm khi trang vừa load
-// let thang = parseInt(prompt("Nhập tháng"));
-// let nam = parseInt(prompt("Nhập năm", "2000"));
-let thang = 1;
-let nam = 2000;
+let thang = parseInt(prompt("Nhập tháng"));
+let nam = parseInt(prompt("Nhập năm", "2000"));
 // Kiểm tra dữ liệu nhập
 
 if (isNaN(thang) || thang < 1 || thang > 12) {
