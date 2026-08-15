@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 11 - Vẽ biểu đồ với Google Chart</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <!-- Thư viện Google Charts (cần có kết nối Internet) -->
+    <script src="https://www.gstatic.com/charts/loader.js"></script>
+</head>
+<body>
+    <div class="khung bai11">
+        <h3>Các dạng biểu đồ</h3>
+
+        <fieldset>
+            <legend>Chart types</legend>
+            <input type="radio" name="loaiBieuDo" id="pie" value="Pie" checked>
+            <label for="pie">Pie</label>
+            <input type="radio" name="loaiBieuDo" id="line" value="Line">
+            <label for="line">Line</label>
+            <input type="radio" name="loaiBieuDo" id="column" value="Column">
+            <label for="column">Column</label>
+        </fieldset>
+
+        <p>
+            Tiêu đề: <input type="text" id="tieuDe" size="45" value="Xuất sắc, Giỏi, Khá, Trung bình, Yếu">
+        </p>
+        <p>
+            Giá trị: <input type="text" id="giaTri" size="45" value="10,50,70,80,30">
+            <button id="btnVe">Draw Chart</button>
+        </p>
+
+        <div id="bieuDo"></div>
+    </div>
+
+    <script src="JS/js11.js"></script>
+</body>
+</html>

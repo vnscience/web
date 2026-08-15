@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 9 - Hồ sơ cá nhân</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body class="trang-cv">
+    <div class="cv">
+        <div class="cv-header">
+            <img src="Images/avatar.svg" alt="Ảnh đại diện" class="avatar">
+            <h1>Nguyễn Văn A</h1>
+            <p class="lien-he">Email: nguyen.vana@example.com | Điện thoại: 0123 456 789</p>
+        </div>
+
+        <!-- ===== Kỹ năng ===== -->
+        <h2>Kỹ năng</h2>
+        <div id="dsKyNang">
+            <span class="the">HTML</span>
+            <span class="the">CSS</span>
+            <span class="the">JavaScript</span>
+        </div>
+        <div class="giua">
+            <button id="btnThemKyNang" class="nut">Thêm kỹ năng</button>
+        </div>
+
+        <!-- ===== Kinh nghiệm làm việc ===== -->
+        <h2>Kinh nghiệm làm việc</h2>
+        <div id="dsKinhNghiem">
+            <div class="kn">
+                <b>Frontend Developer tại Công ty ABC</b>
+                <p>2018 - 2022 - Phát triển giao diện web và ứng dụng mobile</p>
+            </div>
+            <div class="kn">
+                <b>Project manager tại Công ty XYZ</b>
+                <p>2022 - 2024 - Quản lý các dự án phần mềm</p>
+            </div>
+        </div>
+
+        <fieldset>
+            <legend>Thêm kinh nghiệm</legend>
+            <label for="tenKN">Kinh nghiệm:</label>
+            <input type="text" id="tenKN" size="25">
+            <label for="moTaKN">Mô tả:</label>
+            <input type="text" id="moTaKN" size="70">
+        </fieldset>
+        <div class="giua">
+            <button id="btnThemKN" class="nut">Thêm kinh nghiệm</button>
+        </div>
+
+        <!-- ===== Học vấn ===== -->
+        <h2>Học vấn</h2>
+        <p><b>Đại học Công nghệ XYZ</b><br>2017 - 2021</p>
+        <p>Ngành Công nghệ Thông tin</p>
+    </div>
+
+    <script src="JS/js09.js"></script>
+</body>
+</html>
