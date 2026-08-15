@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 6 - Các phép tính số học</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <div class="khung" style="width: 500px;">
+        <form id="frmTinh">
+            <table class="bang-form">
+                <tr>
+                    <th colspan="2">CÁC PHÉP TÍNH SỐ HỌC</th>
+                </tr>
+                <tr>
+                    <td>Số thứ 1</td>
+                    <td><input type="text" id="so1" value="5"></td>
+                </tr>
+                <tr>
+                    <td>Số thứ 2</td>
+                    <td><input type="text" id="so2" value="4"></td>
+                </tr>
+                <tr>
+                    <td>Chọn phép toán</td>
+                    <td>
+                        <input type="radio" name="phepToan" id="cong" value="+" checked>
+                        <label for="cong">Cộng</label><br>
+                        <input type="radio" name="phepToan" id="tru" value="-">
+                        <label for="tru">Trừ</label><br>
+                        <input type="radio" name="phepToan" id="nhan" value="*">
+                        <label for="nhan">Nhân</label><br>
+                        <input type="radio" name="phepToan" id="chia" value="/">
+                        <label for="chia">Chia</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="button" id="btnThucHien" value="Thực hiện"></td>
+                    <td><input type="text" id="ketQua" readonly></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+
+    <script src="JS/js06.js"></script>
+</body>
+</html>

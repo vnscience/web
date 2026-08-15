@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 7 - Đăng ký thành viên</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <div class="khung" style="width: 480px;">
+        <form id="frmDangKy">
+            <table class="bang-form">
+                <tr>
+                    <th colspan="2">ĐĂNG KÝ THÀNH VIÊN</th>
+                </tr>
+                <tr>
+                    <td>Tên đăng nhập</td>
+                    <td><input type="text" id="tenDangNhap"></td>
+                </tr>
+                <tr>
+                    <td>Mật khẩu</td>
+                    <td><input type="password" id="matKhau"></td>
+                </tr>
+                <tr>
+                    <td>Ngày sinh</td>
+                    <td><input type="date" id="ngaySinh"></td>
+                </tr>
+                <tr>
+                    <td>Giới tính</td>
+                    <td>
+                        <input type="radio" name="gioiTinh" id="nam" value="Nam" checked>
+                        <label for="nam">Nam</label>
+                        <input type="radio" name="gioiTinh" id="nu" value="Nữ">
+                        <label for="nu">Nữ</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Vấn đề bạn quan tâm</td>
+                    <td>
+                        <select id="vanDe">
+                            <option>Kinh tế</option>
+                            <option>Thể thao</option>
+                            <option>Văn học nghệ thuật</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="button" id="btnDangKy" value="Đăng ký"></td>
+                    <td><input type="reset" value="Hủy"></td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <textarea id="kqDangKy" rows="6" readonly></textarea>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+
+    <script src="JS/js07.js"></script>
+</body>
+</html>
