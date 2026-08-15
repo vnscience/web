@@ -1,18 +1,296 @@
+/* ==========================================================
+   style.css - CSS dùng chung cho các bài tập Chương 4
+   ========================================================== */
+
 body {
-    margin: 0;
-    padding: 0;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 16px;
+    background: #fff;
+    margin: 20px;
 }
 
 .tieu-de {
     text-align: center;
+    margin: 5px 0 15px;
 }
 
-#ket-qua table {
+button,
+input[type="button"],
+input[type="reset"] {
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    padding: 2px 8px;
+    cursor: pointer;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="date"],
+select {
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    padding: 2px 4px;
+}
+
+/* ---------- Bài 1: Bảng cửu chương ---------- */
+.bang-cuu-chuong table {
+    border-collapse: collapse;
     margin: 0 auto;
-    border: 2px solid #000;
+    border: 2px solid #2f5597;
 }
 
-#ket-qua td {
+.bang-cuu-chuong td {
     border: 1px solid #333;
-    padding: 5px 25px;
+    padding: 6px 14px;
+    vertical-align: top;
+    line-height: 1.4;
+}
+
+/* ---------- Bài 3: String Statistic ---------- */
+.thong-ke {
+    width: 400px;
+}
+
+.thong-ke .dong-nhap {
+    text-align: center;
+}
+
+#kqThongKe {
+    margin-top: 8px;
+    padding-left: 60px;
+    line-height: 1.5;
+}
+
+/* ---------- Bài 4: Mảng số nguyên ---------- */
+.mang p {
+    margin: 10px 0;
+}
+
+.mang .so {
+    display: inline-block;
+    min-width: 26px;
+    text-align: right;
+}
+
+/* ---------- Bài 5: Xử lý chuỗi ---------- */
+.marquee {
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.marquee span {
+    display: inline-block;
+    padding-left: 100%;
+    /* bắt đầu từ mép phải */
+    font-size: 24px;
+    font-weight: bold;
+    animation: chay-chu 12s linear infinite;
+}
+
+@keyframes chay-chu {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+
+    /* chạy hết sang trái */
+}
+
+.xu-ly-chuoi table {
+    margin-bottom: 10px;
+}
+
+.xu-ly-chuoi td {
+    padding: 3px;
+}
+
+.xu-ly-chuoi .nhom-nut {
+    text-align: left;
+}
+
+/* ---------- Bài 6, 7: Bảng có form ---------- */
+.bang-form {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.bang-form th,
+.bang-form td {
+    border: 1px solid #333;
+    padding: 6px 8px;
+}
+
+.bang-form th {
+    font-size: 20px;
+    padding: 8px;
+}
+
+.bang-form input[type="text"],
+.bang-form input[type="password"] {
+    width: 200px;
+}
+
+#kqDangKy {
+    width: 100%;
+    margin-top: 5px;
+    font-family: "Courier New", monospace;
+    font-size: 13px;
+}
+
+/* ---------- Bài 8: Đổi màu nền, màu chữ ---------- */
+.bai08 {
+    width: 320px;
+}
+
+#bangChu {
+    background: red;
+    color: yellow;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px 10px;
+    margin-bottom: 20px;
+}
+
+.bai08 p {
+    font-size: 14px;
+    margin: 12px 0;
+}
+
+/* ---------- Bài 9: Trang CV ---------- */
+body.trang-cv {
+    background: #f4f6f8;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.cv {
+    background: #fff;
+    width: 720px;
+    margin: 20px auto;
+    padding: 30px 40px;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, .15);
+}
+
+.cv-header {
+    text-align: center;
+}
+
+.cv .avatar {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    border: 4px solid #4a90d9;
+}
+
+.cv h1 {
+    color: #24537a;
+    margin: 15px 0 5px;
+}
+
+.cv .lien-he {
+    color: #4a90d9;
+    font-size: 13px;
+    margin-top: 0;
+}
+
+.cv h2 {
+    color: #24537a;
+    border-bottom: 2px solid #4a90d9;
+    padding-bottom: 5px;
+    margin-top: 30px;
+}
+
+/* Thẻ kỹ năng */
+.the {
+    display: inline-block;
+    background: #4a90d9;
+    color: #fff;
+    font-size: 13px;
+    padding: 5px 14px;
+    border-radius: 15px;
+    margin: 4px 6px 4px 0;
+}
+
+.kn b {
+    color: #24537a;
+}
+
+.kn p {
+    margin: 3px 0 8px 40px;
+    color: #4a90d9;
+}
+
+.cv fieldset {
+    border: 1px solid #ccc;
+    margin-top: 15px;
+}
+
+.cv legend,
+.cv fieldset label {
+    color: #a05a2c;
+    font-size: 13px;
+}
+
+.cv fieldset input {
+    display: block;
+    margin: 3px 0 10px;
+    padding: 3px;
+}
+
+.giua {
+    text-align: center;
+    margin: 15px 0;
+}
+
+.nut {
+    background: #4a90d9;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    padding: 8px 20px;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.nut:hover {
+    background: #3a7ab8;
+}
+
+/* ---------- Bài 10: Canvas ---------- */
+.canvas-giua {
+    text-align: center;
+}
+
+#myCanvas {
+    border: 1px solid #ccc;
+}
+
+/* ---------- Bài 11: Google Chart ---------- */
+.bai11 {
+    width: 760px;
+}
+
+.bai11 fieldset {
+    margin-bottom: 12px;
+}
+
+.bai11 label {
+    margin-right: 12px;
+}
+
+/* ---------- Trang chủ index.html ---------- */
+.menu li {
+    margin: 6px 0;
+}
+
+.menu a {
+    color: #2f5597;
+    text-decoration: none;
+}
+
+.menu a:hover {
+    text-decoration: underline;
 }

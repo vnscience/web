@@ -23,19 +23,19 @@ if (isNaN(nam) || nam < 1) {
 // Cách này tự động đúng cả năm nhuận (tháng 2 năm 2000 -> 29 ngày)
 const soNgay = new Date(nam, thang, 0).getDate();
 
-document.getElementById("so-ngay").innerHTML =
+document.getElementById("soNgay").innerHTML =
     "Tháng " + thang + " năm " + nam + " có " + soNgay + " ngày";
 
 // ---------- 3. Nút "Xem ngày giờ" ----------
 let idDongHo = null;   // lưu id của setInterval để không tạo trùng nhiều đồng hồ
 
-document.getElementById("btn-xem").onclick = function () {
+document.getElementById("btnXem").onclick = function () {
     const homNay = new Date();
 
     // getDay(): 0 = Chủ nhật, 1 = Thứ hai, ... 6 = Thứ bảy
     const thu = homNay.getDay() === 0 ? "chủ nhật" : "thứ " + (homNay.getDay() + 1);
 
-    document.getElementById("hom-nay").innerHTML =
+    document.getElementById("homNay").innerHTML =
         "Hôm nay, " + thu + " ngày " + homNay.getDate() +
         "/" + (homNay.getMonth() + 1) + "/" + homNay.getFullYear();
 
@@ -47,7 +47,7 @@ document.getElementById("btn-xem").onclick = function () {
 // Hàm hiển thị giờ:phút:giây hiện tại
 function hienGio() {
     const t = new Date();
-    document.getElementById("dong-ho").innerHTML =
+    document.getElementById("dongHo").innerHTML =
         haiSo(t.getHours()) + ":" + haiSo(t.getMinutes()) + ":" + haiSo(t.getSeconds());
 }
 

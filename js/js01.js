@@ -25,4 +25,4 @@ for (let hang = 0; hang < 2; hang++) {          // 2 hàng
 html += "</table>";
 
 // Đổ chuỗi HTML vừa tạo vào thẻ div
-document.getElementById("ket-qua").innerHTML = html;
+document.getElementById("ketQua").innerHTML = html;
